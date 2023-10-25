@@ -1,24 +1,14 @@
 # vue2-autosuggestion-textarea
 
-## Project setup
+## Usage
+
+Use the command below to install the component:
 ```
-npm install
+npm install vue2-autosuggestion-textarea --save
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Props
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| Name | Description |
+| :---: | :---: | 
+| options | Use this property as your list of options you want to be displayed |
