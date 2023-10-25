@@ -1,28 +1,56 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+	<article class="container">
+		<v2SuggestionArea :options="suggestions" ref="suggestion"/>
+	</article>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import v2SuggestionArea from './components/v2-SuggestionArea.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	components: {
+		v2SuggestionArea
+	},
+	data() {
+		return {
+			suggestions: [],
+			text: ""
+		}
+	},
+	mounted() {
+		this.suggestions.push('##Test##');
+		this.suggestions.push('##Qualcosa##');
+		this.suggestions.push('##Testino##');
+		this.suggestions.push('##Mercoledì##');
+		this.suggestions.push('##Penelope##');
+		this.suggestions.push('##Figata##');
+		this.suggestions.push('##Testone##');
+		this.suggestions.push('##Giovedì##');
+		this.suggestions.push('##Gioco##');
+		this.suggestions.push('##Messaggio1##');
+		this.suggestions.push('##Messaggio2##');
+		this.suggestions.push('##Messaggio3##');
+	},
+	methods: {
+		seeValue() {
+			let value = this.$refs.suggestion.currentText;
+			this.text = value;
+		}
+	}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+input {
+	display: block;
+	margin-top: 20px;
+}
+.container {
+	display: block;
+	margin-top: 300px;
+	margin-left: 200px;
 }
 </style>
