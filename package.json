@@ -1,10 +1,15 @@
 {
-  "name": "vue2-autosuggestion-textarea",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@0xnick/vue2-autosuggestion-textarea",
+  "version": "0.1.2",
+  "main":"dist/v2-SuggestionArea.common.js",
+  "files": ["dist/*", "*.js", "*.json", "*.css"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xNick0/vue2-autosuggestion-textarea"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name v2-SuggestionArea ./src/components/v2-SuggestionArea.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
