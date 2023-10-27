@@ -7,6 +7,16 @@ Use the command below to install the component:
 npm install 0xNick/vue2-autosuggestion-textarea --save
 ```
 
+Then import the js and css file:
+
+```
+import SuggestionArea from '@0xnick/vue2-autosuggestion-textarea';
+import '@0xnick/vue2-autosuggestion-textarea/dist/v2-SuggestionArea.common;
+import '@0xnick/vue2-autosuggestion-textarea/dist/v2-SuggestionArea.css';
+```
+
+I called it `SuggestionArea`, you can call it however you want.
+
 ## Props
 
 | Name | Description |
