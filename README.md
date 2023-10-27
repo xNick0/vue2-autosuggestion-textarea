@@ -34,3 +34,5 @@ There are no events available.
 > You can press Up or Down to iterate through the list
 >
 > You can press TAB to autocomplete with the selected item
+
+![Live test](/media/live_test.gif)
