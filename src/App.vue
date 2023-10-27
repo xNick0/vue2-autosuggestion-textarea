@@ -25,6 +25,14 @@ export default {
 		this.suggestions.push('@Test2');
 		this.suggestions.push('@Test3');
 		this.suggestions.push('@Test4');
+		this.suggestions.push('@Test5');
+		this.suggestions.push('@Test6');
+		this.suggestions.push('@Test7');
+		this.suggestions.push('@Test8');
+		this.suggestions.push('@Test9');
+		this.suggestions.push('@Test10');
+		this.suggestions.push('@Test11');
+		this.suggestions.push('@Test25');
 	}
 }
 </script>
