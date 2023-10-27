@@ -1,8 +1,9 @@
 <template>
   <main>
 	<article class="container">
-		<v2SuggestionArea :options="suggestions" ref="suggestion"/>
+		<v2SuggestionArea v-model="testo" :options="suggestions" ref="suggestion"/>
 	</article>
+	<p>{{ testo }}</p>
   </main>
 </template>
 
@@ -16,22 +17,15 @@ export default {
 	data() {
 		return {
 			suggestions: [],
-			text: ""
+			text: "",
+			testo: ""
 		}
 	},
 	mounted() {
-		this.suggestions.push('##Test##');
-		this.suggestions.push('##Qualcosa##');
-		this.suggestions.push('##Testino##');
-		this.suggestions.push('##Mercoledì##');
-		this.suggestions.push('##Penelope##');
-		this.suggestions.push('##Figata##');
-		this.suggestions.push('##Testone##');
-		this.suggestions.push('##Giovedì##');
-		this.suggestions.push('##Gioco##');
-		this.suggestions.push('##Messaggio1##');
-		this.suggestions.push('##Messaggio2##');
-		this.suggestions.push('##Messaggio3##');
+		this.suggestions.push('@Test1');
+		this.suggestions.push('@Test2');
+		this.suggestions.push('@Test3');
+		this.suggestions.push('@Test4');
 	},
 	methods: {
 		seeValue() {
@@ -51,6 +45,6 @@ input {
 .container {
 	display: block;
 	margin-top: 300px;
-	margin-left: 200px;
+	margin-left: 50px;
 }
 </style>
