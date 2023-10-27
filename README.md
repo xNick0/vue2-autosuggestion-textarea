@@ -4,7 +4,7 @@
 
 Use the command below to install the component:
 ```
-npm install vue2-autosuggestion-textarea --save
+npm install 0xNick/vue2-autosuggestion-textarea --save
 ```
 
 ## Props
