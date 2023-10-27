@@ -12,3 +12,12 @@ npm install vue2-autosuggestion-textarea --save
 | Name | Description |
 | :---: | :---: | 
 | options | Use this property as your list of options you want to be displayed |
+
+---
+
+If you want to change the style of the suggestion area:
+
+| Class | Description |
+| :---: | :---: | 
+| .suggested-elements | This is the class assigned to the dropdown |
+| .suggestion-area | This is the class asssigned to the textarea |
