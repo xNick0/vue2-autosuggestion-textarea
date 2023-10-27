@@ -1,7 +1,7 @@
 <template>
   <main>
 	<article class="container">
-		<v2SuggestionArea v-model="text" :options="suggestions" ref="suggestion"/>
+		<v2SuggestionArea v-model="text" :options="suggestions"/>
 	</article>
 	<p>{{ text }}</p>
   </main>
