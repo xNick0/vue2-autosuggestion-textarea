@@ -1,9 +1,9 @@
 <template>
   <main>
 	<article class="container">
-		<v2SuggestionArea v-model="testo" :options="suggestions" ref="suggestion"/>
+		<v2SuggestionArea v-model="text" :options="suggestions" ref="suggestion"/>
 	</article>
-	<p>{{ testo }}</p>
+	<p>{{ text }}</p>
   </main>
 </template>
 
@@ -17,8 +17,7 @@ export default {
 	data() {
 		return {
 			suggestions: [],
-			text: "",
-			testo: ""
+			text: ""
 		}
 	},
 	mounted() {
@@ -26,12 +25,6 @@ export default {
 		this.suggestions.push('@Test2');
 		this.suggestions.push('@Test3');
 		this.suggestions.push('@Test4');
-	},
-	methods: {
-		seeValue() {
-			let value = this.$refs.suggestion.currentText;
-			this.text = value;
-		}
 	}
 }
 </script>
